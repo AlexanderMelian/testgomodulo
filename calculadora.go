@@ -51,8 +51,8 @@ func ReadInput() string {
 }
 
 func processResult(input string, operator string) {
-	c := calc{}
-	value, err := c.operate(input, operator)
+	c := Calc{}
+	value, err := c.Operate(input, operator)
 	if err != nil {
 		fmt.Println(err)
 	} else {
